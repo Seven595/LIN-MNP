@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lin-mnp"
+version = "0.1.0"
+description = "Linear readout with morphology-neighbour propagation for spatial gene-expression prediction"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24",
+  "torch>=2.1",
+]
+
+[project.optional-dependencies]
+analysis = [
+  "anndata>=0.10",
+  "h5py>=3.9",
+  "open-clip-torch>=2.24",
+  "pandas>=2.0",
+  "Pillow>=10.0",
+  "scikit-learn>=1.4",
+  "scipy>=1.10",
+  "torchvision>=0.16",
+]
+figures = [
+  "anndata>=0.10",
+  "h5py>=3.9",
+  "matplotlib>=3.8",
+  "opencv-python-headless>=4.8",
+  "pandas>=2.0",
+  "Pillow>=10.0",
+  "scipy>=1.10",
+]
+
+[project.scripts]
+lin-mnp = "lin_mnp.model:main"
+
+[tool.setuptools.packages.find]
+include = ["lin_mnp*"]
+
+[tool.setuptools.package-data]
+lin_mnp = ["configs/*.json"]

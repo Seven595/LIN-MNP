@@ -1,0 +1,23 @@
+# Environment variables used by the public release. Relative paths are resolved
+# from the directory in which a command is launched.
+environment:
+  LIN_MNP_DATA_ROOT: ./data
+  LIN_MNP_CACHE_ROOT: ./data/cache
+  LIN_MNP_RESULTS_ROOT: ./outputs
+  LIN_MNP_ARCHIVE_ROOT: ./data/archive
+  LIN_MNP_MODEL_ROOT: ./data/models
+
+# Expected minimum layout:
+# $LIN_MNP_DATA_ROOT/
+#   cscc/
+#     labels/
+#     cohort/       # needed by common-contract comparator workflows
+#     derived/      # needed by common-contract comparator workflows
+# $LIN_MNP_CACHE_ROOT/
+#   cscc/
+#     raw_patches/
+#     benchmark_patches/
+#     ctranspath_context/
+#     ctranspath_local/
+# $LIN_MNP_RESULTS_ROOT/
+#   cscc/folds/

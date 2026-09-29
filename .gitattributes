@@ -1,0 +1,9 @@
+* text=auto eol=lf
+
+*.gz binary
+*.jpg binary
+*.jpeg binary
+*.png binary
+
+# Keep GitHub language statistics focused on Lin-MNP rather than vendored code.
+comparators/methods/** linguist-vendored

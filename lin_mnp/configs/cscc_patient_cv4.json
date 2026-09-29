@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "protocol": "cSCC strict patient-level outer CV4, fixed ordered 997 genes",
+  "folds": [
+    {"fold_id": 0, "train_patient_ids": ["P9", "P10"], "val_patient_id": "P2", "test_patient_id": "P5", "train_sample_ids": ["GSM4284322", "GSM4284323", "GSM4284324", "GSM4284325", "GSM4284326", "GSM4284327"], "val_sample_ids": ["GSM4284316", "GSM4284317", "GSM4284318"], "test_sample_ids": ["GSM4284319", "GSM4284320", "GSM4284321"]},
+    {"fold_id": 1, "train_patient_ids": ["P2", "P9"], "val_patient_id": "P5", "test_patient_id": "P10", "train_sample_ids": ["GSM4284316", "GSM4284317", "GSM4284318", "GSM4284322", "GSM4284323", "GSM4284324"], "val_sample_ids": ["GSM4284319", "GSM4284320", "GSM4284321"], "test_sample_ids": ["GSM4284325", "GSM4284326", "GSM4284327"]},
+    {"fold_id": 2, "train_patient_ids": ["P5", "P10"], "val_patient_id": "P2", "test_patient_id": "P9", "train_sample_ids": ["GSM4284319", "GSM4284320", "GSM4284321", "GSM4284325", "GSM4284326", "GSM4284327"], "val_sample_ids": ["GSM4284316", "GSM4284317", "GSM4284318"], "test_sample_ids": ["GSM4284322", "GSM4284323", "GSM4284324"]},
+    {"fold_id": 3, "train_patient_ids": ["P5", "P9"], "val_patient_id": "P10", "test_patient_id": "P2", "train_sample_ids": ["GSM4284319", "GSM4284320", "GSM4284321", "GSM4284322", "GSM4284323", "GSM4284324"], "val_sample_ids": ["GSM4284325", "GSM4284326", "GSM4284327"], "test_sample_ids": ["GSM4284316", "GSM4284317", "GSM4284318"]}
+  ]
+}

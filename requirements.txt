@@ -1,0 +1,2 @@
+# Core reference implementation. For analysis and figure extras, see README.md.
+-e .
